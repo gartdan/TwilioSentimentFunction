@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "authLevel": "function"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "sms-queue",
+      "connection": "codecampdemostorage_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "sms-queue",
+      "connection": "codecampdemostorage_STORAGE"
+    }
+  ],
+  "disabled": false
+}
